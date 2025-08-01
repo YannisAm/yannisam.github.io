@@ -1,72 +1,145 @@
-export default function HomePage() {
-return (
-<div className="font-sans text-gray-800">
-    {/* Hero Section */}
-    <header className="relative bg-cover bg-center h-[90vh]" style={{
-        backgroundImage: 'url(https://source.unsplash.com/1600x900/?cargo,shipping)' }}>
-        <div className="bg-black/50 absolute inset-0"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">Erifyli</h1>
-            <p className="text-xl md:text-2xl max-w-xl">Global Export Solutions with Integrity and Efficiency</p>
-        </div>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
 
-    {/* Navigation */}
-    <nav className="bg-white shadow sticky top-0 z-20">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span className="text-xl font-semibold text-blue-700">Erifyli</span>
-            <ul className="hidden md:flex gap-6 text-sm font-medium">
-                <li><a href="#about" className="hover:text-blue-700">About</a></li>
-                <li><a href="#products" className="hover:text-blue-700">Products</a></li>
-                <li><a href="#contact" className="hover:text-blue-700">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erifyli - Export Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    {/* About Section */}
-    <section id="about" className="py-16 bg-gray-100 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">About Erifyli</h2>
-            <p className="text-lg text-gray-700">Erifyli is committed to delivering top-quality export solutions across
-                the globe. We specialize in sourcing, packaging, and delivering a wide range of goods with transparency
-                and speed.</p>
-        </div>
-    </section>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    {/* Products Section */}
-    <section id="products" className="py-16 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-10">Our Products</h2>
-            <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                {[1,2,3,4,5,6].map((i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src={`https://source.unsplash.com/400x300/?product,export,${i}`} alt="Product"
-                        className="w-full h-48 object-cover" />
-                    <div className="p-4">
-                        <h3 className="text-lg font-semibold mb-2">Product Name {i}</h3>
-                        <p className="text-sm text-gray-600">Brief description about the product. High-quality,
-                            reliable, and globally sourced.</p>
-                    </div>
-                </div>
-                ))}
-            </div>
-        </div>
-    </section>
+        header {
+            background: url('https://source.unsplash.com/1600x900/?cargo,shipping') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
 
-    {/* Contact Section */}
-    <section id="contact" className="py-16 bg-gray-100 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-            <p className="mb-2 text-gray-700">Email us for business inquiries and partnerships:</p>
-            <p className="text-blue-700 font-medium">info@erifyli.com</p>
-            <p className="text-blue-700 font-medium">sales@erifyli.com</p>
-        </div>
-    </section>
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
 
-    {/* Footer */}
-    <footer className="bg-white py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Erifyli. All rights reserved.
-    </footer>
-</div>
-);
-}
+        header h1 {
+            position: relative;
+            font-size: 3rem;
+        }
+
+        header p {
+            position: relative;
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0077cc;
+        }
+
+        section {
+            padding: 4rem 1rem;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .products {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-top: 2rem;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 1rem;
+        }
+
+        footer {
+            background: #f5f5f5;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <div>
+            <h1>Erifyli</h1>
+            <p>Global Export Solutions with Integrity and Efficiency</p
