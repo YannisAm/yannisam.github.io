@@ -193,43 +193,51 @@ main {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    padding: 2rem 2.5rem;
+    padding: 2rem;
     border-radius: 0.75rem;
-    max-width: 1400px;
+    max-width: 90%;
     width: 90%;
+    background: rgba(0, 0, 0, 0.4);
+    /* adds contrast for readability */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-text h2 {
-    font-size: 4.0rem;
+    font-size: clamp(1.5rem, 5vw, 4rem);
     font-weight: 1000;
     margin-bottom: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .carousel-text p {
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 4vw, 1.8rem);
     font-weight: 500;
     line-height: 1.6;
     max-width: 90%;
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
     color: #dfd9e2;
 }
 
-/* Optional: Add a button style */
+/* Button style */
 .carousel-text .btn {
     display: inline-block;
+    margin-top: 1rem;
     padding: 0.8rem 1.5rem;
     background-color: #7cc243;
     color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     border-radius: 2rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .carousel-text .btn:hover {
-    background-color: #65a836;
+    background-color: #6ab338;
+}
+
+background-color: #65a836;
 }
 
 .fruits-grid {
