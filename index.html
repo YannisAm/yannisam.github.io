@@ -1,145 +1,1032 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gr" class="no-js">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erifyli - Export Solutions</title>
+    <title>MG Export Srl » Export di Frutta Fresca di Qualità</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="LRC Servizi">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="MG Export Srl, con oltre 20 anni di esperienza nel commercio internazionale di frutta fresca, offre consulenza e servizi logistico-commerciali per l'export di pesche, kiwi, uva e altri prodotti.">
+    <link rel="canonical" href="">
+    <meta itemprop="name" content="MG Export Srl » Export di Frutta Fresca di Qualità">
+    <meta itemprop="description"
+        content="MG Export Srl, con oltre 20 anni di esperienza nel commercio internazionale di frutta fresca, offre consulenza e servizi logistico-commerciali per l'export di pesche, kiwi, uva e altri prodotti.">
+    <meta itemprop="image" content="">
+    <meta property="og:locale" content="it">
+    <meta property="og:title" content="MG Export Srl » Export di Frutta Fresca di Qualità">
+    <meta property="og:description"
+        content="MG Export Srl, con oltre 20 anni di esperienza nel commercio internazionale di frutta fresca, offre consulenza e servizi logistico-commerciali per l'export di pesche, kiwi, uva e altri prodotti.">
+    <meta property="og:site_name" content="MG Export">
+
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="MG Export Srl » Export di Frutta Fresca di Qualità">
+    <meta name="twitter:description"
+        content="MG Export Srl, con oltre 20 anni di esperienza nel commercio internazionale di frutta fresca, offre consulenza e servizi logistico-commerciali per l'export di pesche, kiwi, uva e altri prodotti.">
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <script type="text/javascript" charset="UTF-8" async=""
+        src="https://consent.cookiebot.com/Scripts/widgetIcon.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" async=""
+        src="https://consentcdn.cookiebot.com/consentconfig/214f7b53-a153-4e3f-86c5-ce1817c97da7/state.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://consentcdn.cookiebot.com/consentconfig/214f7b53-a153-4e3f-86c5-ce1817c97da7/mgexport.net/configuration.js"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="214f7b53-a153-4e3f-86c5-ce1817c97da7"
+        data-blockingmode="auto" type="text/javascript"></script>
+    <style type="text/css" id="CookieConsentStateDisplayStyles">
+        .cookieconsent-optin-preferences,
+        .cookieconsent-optin-statistics,
+        .cookieconsent-optin-marketing,
+        .cookieconsent-optin {
+            display: none;
+        }
+
+        .cookieconsent-optout-preferences,
+        .cookieconsent-optout-statistics,
+        .cookieconsent-optout-marketing,
+        .cookieconsent-optout {
+            display: block;
+            display: initial;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/css/vendors.min.css">
+    <link rel="stylesheet" href="/css/icon.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/pizza-parlor.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link href="https://mgexport.net/js/jquery.js" rel="preload" as="script">
+    <link href="https://mgexport.net/js/vendors.min.js" rel="preload" as="script">
+    <link href="https://mgexport.net/js/main.js" rel="preload" as="script">
+    <link href="https://mgexport.net/js/custom.js" rel="preload" as="script">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :is([id*='google_ads_iframe'], [id*='taboola-'], .taboolaHeight, .taboola-placeholder, #top-ad, #credential_picker_container, #credentials-picker-container, #credential_picker_iframe, [id*='google-one-tap-iframe'], #google-one-tap-popup-container, .google-one-tap__module, .google-one-tap-modal-div, #amp_floatingAdDiv, #ez-content-blocker-container) {
+            display: none !important;
+            min-height: 0 !important;
+            height: 0 !important;
         }
-
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background: url('https://source.unsplash.com/1600x900/?cargo,shipping') center/cover no-repeat;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            position: relative;
-            font-size: 3rem;
-        }
-
-        header p {
-            position: relative;
-            font-size: 1.25rem;
-            margin-top: 1rem;
-        }
-
-        nav {
-            background: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav .container {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #0077cc;
-        }
-
-        section {
-            padding: 4rem 1rem;
-            max-width: 1100px;
-            margin: auto;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .products {
-            display: grid;
-            gap: 2rem;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            margin-top: 2rem;
-        }
-
-        .product {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-            text-align: left;
-        }
-
-        .product img {
+    </style>
+    <style id="fit-vids-style">
+        .fluid-width-video-wrapper {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            position: relative;
+            padding: 0;
         }
 
-        .product-content {
-            padding: 1rem;
-        }
-
-        footer {
-            background: #f5f5f5;
-            padding: 1rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
+        .fluid-width-video-wrapper iframe,
+        .fluid-width-video-wrapper object,
+        .fluid-width-video-wrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 
-<body>
+<body data-mobile-nav-style="classic">
+    <header class="">
+        <nav class="navbar navbar-expand-lg header-dark bg-gradient-dark-transparent center-logo disable-fixed">
+            <div class="container-fluid">
+                <div class="col-auto col-lg-2 menu-logo">
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/logo-white.png" alt="" class="default-logo" data-no-retina="">
+                        <img src="/images/logo-white.png" alt="" class="mobile-logo" data-no-retina="">
+                    </a>
+                </div>
+                <div class="col-auto col-lg-8 menu-order">
+                    <button class="navbar-toggler float-end collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation"
+                        aria-expanded="false">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                        <ul class="navbar-nav navbar-left justify-content-end alt-font">
+                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="/chi-siamo" class="nav-link">Chi siamo</a></li>
+                        </ul>
+                        <ul class="navbar-nav navbar-right justify-content-start alt-font">
+                            <li class="nav-item"><a href="/prodotti" class="nav-link">Prodotti</a></li>
+                            <li class="nav-item"><a href="/contatti" class="nav-link">Contatti</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-2 text-end">
+                    <div class="header-icon">
+                        <div class="header-button">
+                            <!-- languages flag -->
+                            <a href="https://mgexport.net/?gt=1#googtrans(en)">
+                                <img src="./images/resource/uk.jpg" class="img-fluid" alt="" style="max-width:40px;"
+                                    data-no-retina="">
+                            </a>
 
-    <!-- Hero Section -->
-    <header>
-        <div>
-            <h1>Erifyli</h1>
-            <p>Global Export Solutions with Integrity and Efficiency</p
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section-dark p-0 bg-dark-gray mt-0 section-dark-highlight">
+        <div class="swiper lg-no-parallax full-screen md-h-600px sm-h-700px ipad-top-space-margin swiper-light-pagination swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
+            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;parallax&quot;: true, &quot;speed&quot;: 1500, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination-bullets&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false },  &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }"
+            style="margin-top: inherit; height: 419px;">
+            <div class="swiper-wrapper" id="swiper-wrapper-f0adf859504965a8" aria-live="off"
+                style="transition-duration: 1500ms; transform: translate3d(-2880px, 0px, 0px);">
+
+
+
+                <div class="swiper-slide overflow-hidden swiper-slide-next" style="width: 1440px;" role="group"
+                    aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500"
+                        style="background-image: url(&quot;images/copertina-3.jpg&quot;); transform: translate3d(500px, 0px, 0px); transition-duration: 1500ms;">
+                        <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+                        <div class="container h-100" data-swiper-parallax="-500"
+                            style="transform: translate3d(-500px, 0px, 0px); transition-duration: 1500ms;">
+                            <div class="row align-items-center h-100">
+                                <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start anime-child anime-complete"
+                                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
+                                    style="transition: none;">
+                                    <h1 class="alt-font w-100 text-shadow-double-large ls-minus-2px appear" style="">La
+                                        nostra mission</h1>
+                                    <div style="" class="appear">
+                                        <span class="opacity-6 mb-25px sm-mb-15px d-inline-block">Il nostro obiettivo è
+                                            <b>garantire la massima qualità lungo tutta la filiera</b>: dalla produzione
+                                            con rigorosi controlli fitosanitari, allo stoccaggio, lavorazione e
+                                            logistica. Collaboriamo con centri di ricerca per migliorare continuamente e
+                                            rispondere alle esigenze dei clienti.</span>
+                                    </div>
+                                    <a href="/contatti"
+                                        class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0 appear"
+                                        style="">Contattaci<span class="bg-white text-base-color"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide overflow-hidden swiper-slide-prev" style="width: 1440px;" role="group"
+                    aria-label="2 / 3" data-swiper-slide-index="1">
+                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500"
+                        style="background-image: url(&quot;images/copertina-2.jpg&quot;); transform: translate3d(500px, 0px, 0px); transition-duration: 1500ms;">
+                        <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+                        <div class="container h-100" data-swiper-parallax="-500"
+                            style="transform: translate3d(-500px, 0px, 0px); transition-duration: 1500ms;">
+                            <div class="row align-items-center h-100">
+                                <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start anime-child anime-complete"
+                                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
+                                    style="transition: none;">
+                                    <h1 class="alt-font w-100 text-shadow-double-large ls-minus-2px appear"
+                                        style="transition: none; transform: translateX(0px); opacity: 1;">Chi siamo</h1>
+                                    <div style="transition: none; transform: translateX(0px); opacity: 1;"
+                                        class="appear">
+                                        <span class="opacity-6 mb-25px sm-mb-15px d-inline-block">MG Export nasce in
+                                            Piemonte, da una <b>famiglia con generazioni di esperienza</b> nella
+                                            produzione di pesche, nettarine e kiwi. Siamo impegnati a diversificare i
+                                            nostri prodotti e a espanderci in nuove aree geografiche, mantenendo sempre
+                                            <b>alti standard di qualità, sicurezza e rispetto per l'ambiente</b>.</span>
+                                    </div>
+                                    <a href="/chi-siamo"
+                                        class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0 appear"
+                                        style="transition: none; transform: translateX(9.9141px); opacity: 0.900859;">Scopri
+                                        la nostra storia<span class="bg-white text-base-color"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide overflow-hidden swiper-slide-visible swiper-slide-fully-visible swiper-slide-active"
+                    style="width: 1440px;" role="group" aria-label="3 / 3" data-swiper-slide-index="2">
+                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500"
+                        style="background-image: url(&quot;images/copertina-4.jpg&quot;); transform: translate3d(0px, 0px, 0px); transition-duration: 1500ms;">
+                        <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+                        <div class="container h-100" data-swiper-parallax="-500"
+                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 1500ms;">
+                            <div class="row align-items-center h-100">
+                                <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start anime-child anime-complete"
+                                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
+                                    style="transition: none;">
+                                    <h1 class="alt-font w-100 text-shadow-double-large ls-minus-2px appear"
+                                        style="transition: none; transform: translateX(0px); opacity: 1;">Benvenuti su
+                                        MG Export</h1>
+                                    <div style="transition: none; transform: translateX(0px); opacity: 1;"
+                                        class="appear">
+                                        <span class="opacity-6 mb-25px sm-mb-15px d-inline-block">Con oltre <b>20 anni
+                                                di esperienza nel commercio internazionale di frutta fresca</b>, MG
+                                            Export Srl offre consulenza e servizi logistico-commerciali di alta qualità
+                                            per l'export di frutta fresca in tutto il mondo.</span>
+                                    </div>
+                                    <a href="/prodotti"
+                                        class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0 appear"
+                                        style="transition: none; transform: translateX(9.9141px); opacity: 0.900859;">Scopri
+                                        i nostri prodotti<span class="bg-white text-base-color"><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+    </section>
+
+    <section class="overflow-hidden bg-very-light-gray p-5">
+        <div class="container">
+            <div class="row justify-content-center md-mb-5">
+                <div class="col-lg-6 md-mb-50px appear anime-child anime-complete"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;willchange&quot;: &quot;transform&quot;, &quot;opacity&quot;: [0, 1], &quot;rotateY&quot;: [90, 0], &quot;rotateZ&quot;: [-10, 0], &quot;translateY&quot;: [80, 0], &quot;translateZ&quot;: [50, 0], &quot;staggervalue&quot;: 200, &quot;duration&quot;: 600, &quot;delay&quot;: 100, &quot;easing&quot;: &quot;easeOutCirc&quot; }"
+                    style="will-change: transform;">
+                    <h2 class="alt-font fw-700 text-uppercase text-dark-gray ls-minus-1px"
+                        style="will-change: transform;">MG Export Srl</h2>
+                    <span class="fw-600 fs-20 alt-font text-base-color text-uppercase mb-25px d-block"
+                        style="will-change: transform;">Export di frutta fresca di qualità in tutto il mondo.</span>
+                    <p class="mb-30px sm-mb-25px" style="will-change: transform;">
+                        Il team di Mg Export Srl, con una <b>competenza ventennale nel settore del commercio
+                            internazionale di frutta fresca</b>, fornisce servizi di consulenza logistica e commerciale
+                        di eccellenza. L'obiettivo principale è <b>agevolare le operazioni di esportazione di frutta
+                            fresca in tutto il mondo, garantendo efficienza e conformità alle normative
+                            internazionali</b>.<br><br>
+                        Siamo un gruppo di esperti con una vasta esperienza nel settore dell’import-export di prodotti
+                        ortofrutticoli. La nostra competenza ci permette di <b>affrontare le sfide logistiche e
+                            commerciali</b> legate alla frutta fresca <b>con professionalità e dedizione</b>.
+                    </p>
+                </div>
+                <div class="col-lg-5 position-relative offset-lg-1">
+                    <div class="text-end w-80 md-w-75 ms-auto skrollable shadow-in skrollable-before"
+                        data-animation-delay="100" data-shadow-animation="true"
+                        data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"
+                        style="transform: translateY(50px);">
+                        <img src="/images/mgexport-home.jpg" alt="" class="border-radius-5px" data-no-retina="">
+                    </div>
+                    <div class="w-55 md-w-50 overflow-hidden position-absolute left-15px bottom-minus-20px skrollable shadow-in skrollable-before"
+                        data-shadow-animation="true" data-animation-delay="500"
+                        data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)"
+                        style="transform: translateY(-30px);">
+                        <img src="/images/mgexport-home2.jpg" alt="" class="w-100 border-radius-5px" data-no-retina="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-bottom border-color-extra-medium-gray pt-40px pb-40px">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center align-items-center appear anime-child anime-complete"
+                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-15, 0], &quot;translateY&quot;: [15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+
+                <div class="col icon-with-text-style-08 md-mb-30px text-center text-sm-start" style="">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="line-icon-Conference icon-double-large text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Credibilità</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col icon-with-text-style-08 md-mb-30px text-center text-sm-start" style="">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="line-icon-Security-Check icon-double-large text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Sicurezza del prodotto</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col icon-with-text-style-08 xs-mb-30px text-center text-sm-start" style="">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="line-icon-Leafs icon-double-large text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Rispetto per l'ambiente</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col icon-with-text-style-08 text-center text-sm-start" style="">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="line-icon-Handshake icon-double-large text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Soddisfazione del cliente</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-6">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 align-items-center justify-content-center z-index-1 d-block d-md-flex text-center appear anime-child anime-complete"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15,0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <span
+                        class="text-red fs-28 ls-minus-05px alt-font fw-300 border-end sm-border-end-0 border-color-transparent-dark-very-light pt-10px pb-10px pe-30px me-30px sm-pe-0 sm-me-0 text-uppercase"
+                        style="">MG Export</span>
+                    <h2 class="mb-0 alt-font text-dark-gray text-uppercase fw-700 ls-minus-1px" style="">I nostri
+                        prodotti</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 position-relative xs-pb-35px">
+                    <div>
+                        <div class="swiper base-color swiper-initialized swiper-horizontal swiper-backface-hidden"
+                            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 30, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot;, &quot;grabCursor&quot;: false }"
+                            onmouseover="">
+                            <div class="swiper-wrapper text-center text-md-start" id="swiper-wrapper-10977b4b96a93acdb"
+                                aria-live="off"
+                                style="transition-duration: 0ms; transform: translate3d(-1800px, 0px, 0px); transition-delay: 0ms;">
+
+
+
+
+
+
+
+
+
+                                <div class="swiper-slide" style="width: 330px; margin-right: 30px;" role="group"
+                                    aria-label="7 / 9" data-swiper-slide-index="6">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=6"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/mandarini.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Mandarini</span>
+                                                            <p class="text-white opacity-6 fs-18">novembre - febbraio
+                                                            </p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="width: 330px; margin-right: 30px;" role="group"
+                                    aria-label="8 / 9" data-swiper-slide-index="7">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=7"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/susine.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Susine</span>
+                                                            <p class="text-white opacity-6 fs-18">luglio - dicembre</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="width: 330px; margin-right: 30px;" role="group"
+                                    aria-label="9 / 9" data-swiper-slide-index="8">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=8"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/mele.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Mele</span>
+                                                            <p class="text-white opacity-6 fs-18">agosto - aprile</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="width: 330px; margin-right: 30px;" role="group"
+                                    aria-label="1 / 9" data-swiper-slide-index="0">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=0"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/pesche.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Pesche
+                                                                / Nettarine</span>
+                                                            <p class="text-white opacity-6 fs-18">maggio - settembre</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-prev" style="width: 330px; margin-right: 30px;"
+                                    role="group" aria-label="2 / 9" data-swiper-slide-index="1">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=1"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/ciliegie.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Ciliegie</span>
+                                                            <p class="text-white opacity-6 fs-18">maggio - luglio</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" style="width: 330px; margin-right: 30px;"
+                                    role="group" aria-label="3 / 9" data-swiper-slide-index="2">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=2"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/albicocche.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Albicocche</span>
+                                                            <p class="text-white opacity-6 fs-18">maggio - luglio</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" style="width: 330px; margin-right: 30px;"
+                                    role="group" aria-label="4 / 9" data-swiper-slide-index="3">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=3"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/uva.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Uva
+                                                                da tavola</span>
+                                                            <p class="text-white opacity-6 fs-18">luglio - dicembre</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="width: 330px; margin-right: 30px;" role="group"
+                                    aria-label="5 / 9" data-swiper-slide-index="4">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=4"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/arance.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Arance</span>
+                                                            <p class="text-white opacity-6 fs-18">ottobre - maggio</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="width: 330px; margin-right: 30px;" role="group"
+                                    aria-label="6 / 9" data-swiper-slide-index="5">
+                                    <div>
+                                        <a href="/dettaglio-prodotto?id=5"
+                                            class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
+                                        <div class="atropos-scale"
+                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
+                                            <div class="atropos-rotate"
+                                                style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                                                <div class="atropos-inner">
+                                                    <figure
+                                                        class="m-0 hover-box border-radius-4px overflow-hidden position-relative"
+                                                        data-atropos-offset="3"
+                                                        style="transition-duration: 300ms; transform: translate3d(0px, 0px, 0px);">
+                                                        <img class="w-100" src="/images/kiwi.jpg" alt=""
+                                                            data-no-retina="">
+                                                        <figcaption
+                                                            class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+                                                            <span
+                                                                class="alt-font text-white fw-500 fs-26 sm-lh-26 xs-lh-28 sm-mb-5px">Kiwi</span>
+                                                            <p class="text-white opacity-6 fs-18">ottobre - maggio</p>
+                                                            <div
+                                                                class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                            </div>
+                                                            <div
+                                                                class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1">
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <span class="atropos-highlight"
+                                                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"></span>
+                                                </div>
+                                                <span class="atropos-shadow"
+                                                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-0">
+        <div class="container">
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 align-items-center justify-content-center z-index-1 d-block d-md-flex text-center appear anime-child anime-complete"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15,0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <span
+                        class="text-base-color fs-28 ls-minus-05px alt-font fw-300 border-end sm-border-end-0 border-color-transparent-dark-very-light pt-10px pb-10px pe-30px me-30px sm-pe-0 sm-me-0 text-uppercase"
+                        style="">MG Export</span>
+                    <h2 class="mb-0 alt-font text-dark-gray text-uppercase fw-700 ls-minus-1px" style="">Dove ci
+                        troviamo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="w-100">
+                        <iframe height="600" style="border:0; width: 100%" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2838.3882385883076!2d7.492854!3d44.650419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cd491ac9b04697%3A0x265e168b0b05bfc3!2sMg%20Export!5e0!3m2!1sit!2sit!4v1719839452638!5m2!1sit!2sit"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="backtotopbutton" title="Go to top" style="display: none;"
+        class="justify-content-center align-items-center">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+            </path>
+        </svg>
+    </button>
+
+    <footer class="position-relative pb-0">
+        <div class="footer-bg background-position-center-top position-absolute h-100 w-100 top-0px left-0px z-index-minus-1"
+            style="background-image: url('/images/footer-bg.jpg')"></div>
+        <div class="container pb-3">
+            <div class="row mb-4 sm-mb-40px">
+                <div class="col-12 text-center">
+                    <h4 class="text-white fw-300 mb-0 alt-font text-uppercase">I nostri contatti</h4>
+                </div>
+            </div>
+            <div
+                class="row justify-content-around align-items-center mb-5 md-mb-8 sm-mb-50px text-center text-sm-start px-5">
+                <div
+                    class="col-lg-4 col-md-6 col-sm-12 text-md-center text-lg-start md-mb-30px last-paragraph-no-margin">
+                    <a href="/" class="footer-logo"><img src="/images/logo-orizzontale.png" alt=""
+                            data-no-retina=""></a>
+                    <p class="mt-3">
+                        Grazie alla competenza ventennale acquisita dal team di Mg Export Srl nel commercio
+                        internazionale di frutta fresca, forniamo i migliori servizi di consulenza logistico commerciale
+                        nelle operazioni di Export in tutto il mondo.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 last-paragraph-no-margin sm-mb-30px">
+                    <div class="my-2">
+                        <span class="text-white fw-500">Indirizzo</span>
+                        <p class="w-80 lg-w-100">
+                            <a href="https://maps.app.goo.gl/EJ9q1jKYPVYgR2RZ9">Via Torino, 73/F - 12037 Saluzzo CN</a>
+                        </p>
+                    </div>
+                    <div class="my-2">
+                        <span class="text-white fw-500">Telefono</span>
+                        <p>
+                            Ufficio: <a href="tel:+390175211971">+39 0175 211971</a>
+                        </p>
+                    </div>
+                    <div class="my-2">
+                        <span class="text-white mb-10px fw-500">Email</span>
+                        <p>
+                            <a href="mailto:office@mgexport.net">office@mgexport.net</a> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-15px pb-15px md-pb-30px border-top border-color-transparent-white-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-start my-auto">
+                        <ul class="footer-navbar fs-16">
+                            <li class="nav-item"><a href="/cookie" class="nav-link">Cookie Policy</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 text-end my-auto">
+                        <p class="my-auto">© 2025 Powered by&nbsp;<a href="https://www.leonardotec.it/"
+                                target="_blank">Leonardo TEC</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/vendors.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script type="text/javascript">
+        let lang = "";
+        if (location.hash != "") {
+            lang = location.hash.replace("#googtrans(", "").replace(")", "");
+        } else {
+            lang = "it";
+        }
+        if (lang != "it" && lang != "en") {
+            console.log('https://mgexport.net/?gt=0');
+        } else {
+            $.ajax({
+                url: "/ajax/set-session-lang.php?lang=" + lang,
+                method: "get",
+                dataType: "JSON",
+                data: [],
+                success: function () { }
+            });
+        }
+
+
+    </script>
+
+
+
+
+    <iframe style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;" name="__uspapiLocator"
+        tabindex="-1" role="presentation" aria-hidden="true" title="Blank"></iframe><img id="CookiebotSessionPixel"
+        src="https://imgsct.cookiebot.com/1.gif?dgi=214f7b53-a153-4e3f-86c5-ce1817c97da7"
+        alt="Cookiebot session tracker icon loaded" data-cookieconsent="ignore" style="display: none;"
+        data-no-retina=""><iframe style="position: absolute; width: 1px; height: 1px; top: -9999px;" tabindex="-1"
+        role="presentation" aria-hidden="true" title="Blank"
+        src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html"></iframe>
+    <div>
+        <div dir="ltr" id="CookiebotWidget" lang="it"><button class="CookiebotWidget-logo" aria-label="Apri widget CMP"
+                lang="it"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd">
+                        <circle cx="12" cy="12" r="12"></circle>
+                        <path
+                            d="M15.094 13.978c-1.146 0-1.946-.813-1.946-1.978s.8-1.978 1.946-1.978c1.145 0 1.945.813 1.945 1.978s-.8 1.978-1.945 1.978M9.07 10.022h3.883l-.094.09c-.537.515-.844 1.203-.844 1.888 0 1.738 1.294 3 3.079 3 1.786 0 3.082-1.262 3.082-3s-1.296-3-3.082-3H9.079C7.295 9 6 10.262 6 12s1.295 3 3.079 3h2.144v-1.022H9.07c-1.136 0-1.932-.813-1.937-1.978 0-1.146.815-1.978 1.937-1.978"
+                            fill="#000"></path>
+                    </g>
+                </svg></button>
+            <div id="CookiebotWidget-widgetContent"></div>
+        </div>
+        <div id="CookiebotWidgetUnderlay"></div>
+    </div>
+    <style id="CookiebotWidgetStylesheet">
+        @keyframes CookiebotWidgetFadeIn {
+            0% {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        #CookiebotWidget {
+            word-wrap: break-word;
+            left: 10px;
+            bottom: 10px;
+            animation: CookiebotWidgetFadeIn .3s ease-in;
+            background-color: #141414;
+            border-radius: 40px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            min-height: 48px;
+            min-width: 48px;
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            transition: all .2s ease-in;
+            word-break: break-word;
+            z-index: 2147483631
+        }
+
+        #CookiebotWidget,
+        #CookiebotWidget * {
+            background: transparent;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            font-size: 15px;
+            letter-spacing: .1px;
+            margin: 0;
+            outline: 0;
+            padding: 0
+        }
+
+        #CookiebotWidget * {
+            font-family: inherit
+        }
+
+        #CookiebotWidget button,
+        #CookiebotWidget li,
+        #CookiebotWidget strong,
+        #CookiebotWidget svg,
+        #CookiebotWidget ul {
+            border: none;
+            cursor: inherit;
+            font-weight: inherit;
+            line-height: 1.5
+        }
+
+        #CookiebotWidget:not(.CookiebotWidget-inactive) {
+            opacity: 1;
+            pointer-events: all;
+            transition: opacity .3s ease-in, border-radius .2s ease-in
+        }
+
+        #CookiebotWidget.CookiebotWidget-open {
+            overflow: hidden
+        }
+
+        #CookiebotWidget:not(.CookiebotWidget-open):hover {
+            box-shadow: 0 4px 18px rgba(0, 0, 0, .3)
+        }
+
+        #CookiebotWidget+#CookiebotWidgetUnderlay {
+            background: #000;
+            height: 100vh;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            visibility: hidden;
+            width: 100vw;
+            z-index: 2147483630
+        }
+
+        #CookiebotWidget:not(.CookiebotWidget-open) .CookiebotWidget-logo {
+            cursor: pointer
+        }
+
+        #CookiebotWidget .CookiebotWidget-logo {
+            display: block;
+            transition: opacity .3s, transform .3s
+        }
+
+        #CookiebotWidget .CookiebotWidget-logo svg {
+            display: block;
+            height: 44px;
+            transition: all .3s;
+            width: 44px
+        }
+
+        #CookiebotWidget:not(.CookiebotWidget-open) button.CookiebotWidget-logo svg {
+            height: 48px;
+            transition: all 0s ease;
+            transition-delay: .2s;
+            width: 48px
+        }
+
+        #CookiebotWidget .CookiebotWidget-logo svg circle {
+            fill: #141414
+        }
+
+        #CookiebotWidget .CookiebotWidget-logo svg path {
+            fill: #FFFFFF
+        }
+
+        #CookiebotWidget #CookiebotWidget-widgetContent {
+            display: flex;
+            max-height: 0;
+            max-width: 0;
+            overflow: hidden;
+            transition: all .2s ease-in
+        }
+
+        #CookiebotWidget.CookiebotWidget-open #CookiebotWidget-widgetContent {
+            max-height: 1000px;
+            max-width: 1000px
+        }
+
+        #CookiebotWidget.CookiebotWidget-open .CookiebotWidget-contents {
+            max-height: calc(100vh - 10px);
+            min-height: 360px
+        }
+
+        #CookiebotWidget :focus-visible,
+        #CookiebotWidget:not(.CookiebotWidget-open) .Cookiebotwidget-logo {
+            outline: 2px solid #1032CF;
+            outline-offset: 1px
+        }
+
+        @media screen and (max-width:600px) {
+            #CookiebotWidget:not(.CookiebotWidget-inactive) {
+                bottom: 10px;
+                left: 10px
+            }
+
+            #CookiebotWidget :focus-visible,
+            #CookiebotWidget:not(.CookiebotWidget-open) .Cookiebotwidget-logo {
+                outline: 0
+            }
+        }
+
+        @media screen and (min-width:601px) {
+            #CookiebotWidget+#CookiebotWidgetUnderlay {
+                display: none
+            }
+        }
+    </style>
+</body>
+
+</html>
+<!DOCTYPE html>
