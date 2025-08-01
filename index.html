@@ -1,0 +1,72 @@
+export default function HomePage() {
+return (
+<div className="font-sans text-gray-800">
+    {/* Hero Section */}
+    <header className="relative bg-cover bg-center h-[90vh]" style={{
+        backgroundImage: 'url(https://source.unsplash.com/1600x900/?cargo,shipping)' }}>
+        <div className="bg-black/50 absolute inset-0"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4">Erifyli</h1>
+            <p className="text-xl md:text-2xl max-w-xl">Global Export Solutions with Integrity and Efficiency</p>
+        </div>
+    </header>
+
+    {/* Navigation */}
+    <nav className="bg-white shadow sticky top-0 z-20">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span className="text-xl font-semibold text-blue-700">Erifyli</span>
+            <ul className="hidden md:flex gap-6 text-sm font-medium">
+                <li><a href="#about" className="hover:text-blue-700">About</a></li>
+                <li><a href="#products" className="hover:text-blue-700">Products</a></li>
+                <li><a href="#contact" className="hover:text-blue-700">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {/* About Section */}
+    <section id="about" className="py-16 bg-gray-100 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">About Erifyli</h2>
+            <p className="text-lg text-gray-700">Erifyli is committed to delivering top-quality export solutions across
+                the globe. We specialize in sourcing, packaging, and delivering a wide range of goods with transparency
+                and speed.</p>
+        </div>
+    </section>
+
+    {/* Products Section */}
+    <section id="products" className="py-16 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-10">Our Products</h2>
+            <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                {[1,2,3,4,5,6].map((i) => (
+                <div key={i} className="bg-white rounded-2xl shadow-md overflow-hidden">
+                    <img src={`https://source.unsplash.com/400x300/?product,export,${i}`} alt="Product"
+                        className="w-full h-48 object-cover" />
+                    <div className="p-4">
+                        <h3 className="text-lg font-semibold mb-2">Product Name {i}</h3>
+                        <p className="text-sm text-gray-600">Brief description about the product. High-quality,
+                            reliable, and globally sourced.</p>
+                    </div>
+                </div>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    {/* Contact Section */}
+    <section id="contact" className="py-16 bg-gray-100 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+            <p className="mb-2 text-gray-700">Email us for business inquiries and partnerships:</p>
+            <p className="text-blue-700 font-medium">info@erifyli.com</p>
+            <p className="text-blue-700 font-medium">sales@erifyli.com</p>
+        </div>
+    </section>
+
+    {/* Footer */}
+    <footer className="bg-white py-6 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Erifyli. All rights reserved.
+    </footer>
+</div>
+);
+}
